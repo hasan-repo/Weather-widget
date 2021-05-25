@@ -86,7 +86,7 @@ window.addEventListener('load', () => {
                                     '<img src="' + urlIcn + '" />' +
                                     '<div class="description">' + description + '</div>' +
                                     '<div class="temp">' +
-                                    '<span class="high">' + minTemp.toFixed() + '℃</span>/<span class="low">' + maxTemp.toFixed() + '℃</span>' +
+                                    '<span class="high">' + maxTemp.toFixed() + '℃</span>/<span class="low">' + minTemp.toFixed() + '℃</span>' +
                                     '</div>' +
                                     '</div>';
 
