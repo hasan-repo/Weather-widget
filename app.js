@@ -16,8 +16,7 @@ let foreCast = document.getElementById("fivedayforecast");//get 5 days forecast
 window.addEventListener('load', () => {
     let longiTute;
     let latTute;
-    
-    
+     
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((position) => {//get location
             longiTute = position.coords.longitude;
@@ -35,7 +34,7 @@ window.addEventListener('load', () => {
                         let divHtml = '<h2>Current Conditions</h2>' +
                                 '<img src="' + icnLink + '" />' +
                                 '<div class="current">' +
-                                '<div class="temp">' + cel.toFixed(2) + '℃</div>' +
+                                '<div class="temp">' + cel.toFixed() + '℃</div>' +
                                 '<div class="condition">' + description + '</div>' +
                                 '</div>';
                         currentWeather.innerHTML = divHtml;
@@ -87,7 +86,7 @@ window.addEventListener('load', () => {
                                     '<img src="' + urlIcn + '" />' +
                                     '<div class="description">' + description + '</div>' +
                                     '<div class="temp">' +
-                                    '<span class="high">' + minTemp.toFixed(2) + '℃</span>/<span class="low">' + maxTemp.toFixed(2) + '℃</span>' +
+                                    '<span class="high">' + minTemp.toFixed() + '℃</span>/<span class="low">' + maxTemp.toFixed() + '℃</span>' +
                                     '</div>' +
                                     '</div>';
 
